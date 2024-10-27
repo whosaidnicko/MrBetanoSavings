@@ -4,7 +4,7 @@ workflows:
     max_build_duration: 120
     instance_type: mac_mini_m2
     integrations:
-      app_store_connect: codemagic
+      app_store_connect: aab6c6fd-862c-413b-8d41-9d82bcae3cba9bdd85f2-9737-47fa-ab46-7e8b0d89ce00
     environment:
       ios_signing:
         distribution_type: app_store
@@ -40,7 +40,7 @@ workflows:
     publishing:
       email:
         recipients:
-          - user_1@example.com
+          - nicu161299@gmail.com
           - user_2@example.com
         notify:
           success: true
