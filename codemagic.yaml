@@ -17,12 +17,6 @@ workflows:
       xcode: 15.3
        
     scripts:
-    
-      - name: Set up provisioning profiles settings on Xcode project
-        script: |
-      xcode-project use-profile --name "distrebutes" \
-                                --team-id "F3UQU3M634"\
-                                --type "development"
       - name: Increment build number
         script: |
           cd $CM_BUILD_DIR
