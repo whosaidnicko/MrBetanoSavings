@@ -44,16 +44,7 @@ workflows:
           success: true
           failure: false
       app_store_connect:
-        # Contents of the API key saved as a secure environment variable:
-    api_key: accesCodeMagic
-    
-    # Alphanumeric value that identifies the API key,
-    # can also reference environment variable such as $APP_STORE_CONNECT_KEY_IDENTIFIER
-    key_id: 27172b6f-4ac4-4aa8-bdda-5bdfd61bef86
-
-    # Alphanumeric value that identifies who created the API key,
-    # can also reference environment variable such as $APP_STORE_CONNECT_ISSUER_ID
-    issuer_id: QN9Q977H42
+     
 
         # Configuration related to TestFlight (optional)
         # Note: This action is performed during post-processing.
