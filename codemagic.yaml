@@ -15,11 +15,9 @@ workflows:
         XCODE_SCHEME: "MrBetanoSavings"
         APP_STORE_APPLE_ID: 6737456175
       xcode: 15.3
-       cocoapods: false
+       
     scripts:
-      - name: Install CocoaPods dependencies
-        script: |
-          pod install
+    
       - name: Set up provisioning profiles settings on Xcode project
         script: xcode-project use-profiles
       - name: Increment build number
