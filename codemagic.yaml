@@ -45,7 +45,7 @@ workflows:
           failure: false
       app_store_connect:
         # Contents of the API key saved as a secure environment variable:
-    api_key: -accesCodeMagic
+    api_key: accesCodeMagic
     
     # Alphanumeric value that identifies the API key,
     # can also reference environment variable such as $APP_STORE_CONNECT_KEY_IDENTIFIER
