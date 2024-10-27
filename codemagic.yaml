@@ -43,7 +43,7 @@ workflows:
         notify:
           success: true
           failure: false
-       app_store_connect:
+      app_store_connect:
         auth: integration
 
         # Configuration related to TestFlight (optional)
@@ -55,4 +55,4 @@ workflows:
 
         # Configuration related to App Store (optional)
         # Note: This action is performed during post-processing.
-        submit_to_app_store: false
+        submit_to_app_store: true
