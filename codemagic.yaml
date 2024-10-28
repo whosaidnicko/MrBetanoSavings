@@ -11,7 +11,7 @@ workflows:
         bundle_identifier: com.savings.mond
       vars:
         BUNDLE_ID: "com.savings.mond"
-        XCODE_WORKSPACE: "MrBetanoSavings.xcodeproj"
+        XCODE_WORKSPACE: "MrBetanoSavings.xworkspace"
         XCODE_SCHEME: "MrBetanoSavings"
         APP_STORE_APPLE_ID: 6737456175
       xcode: 15.3
@@ -29,7 +29,7 @@ workflows:
       - name: Build ipa for distribution
         script: |
           xcode-project build-ipa \
-            --project "$CM_BUILD_DIR/ios/$XCODE_PROJECT" \
+            --workspace "$CM_BUILD_DIR/ios/$XCODE_PROJECT" \
             --scheme "$XCODE_SCHEME" \
             --archive-flags="-destination 'generic/platform=iOS'"
 
@@ -54,4 +54,4 @@ workflows:
         beta_groups:
           - group name 1
           - group name 2
-        submit_to_app_store: true
+        submit_to_app_store: false
