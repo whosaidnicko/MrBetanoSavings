@@ -49,7 +49,7 @@ workflows:
           success: true
           failure: false
       app_store_connect:
-        auth: accesCodeMagic  # Choose which integration to use for authentication
+        auth: integration  # Choose which integration to use for authentication
         submit_to_testflight: true
         beta_groups:
           - group name 1
