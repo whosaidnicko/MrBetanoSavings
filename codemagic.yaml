@@ -41,10 +41,9 @@ workflows:
           success: true
           failure: false
       app_store_connect:
-        auth: integration
-
-        # Configuration related to TestFlight (optional)
-        # Note: This action is performed during post-processing.
+        api_key: $APP_STORE_CONNECT_PRIVATE_KEY
+        key_id: QN9Q977H42
+        issuer_id: 27172b6f-4ac4-4aa8-bdda-5bdfd61bef86
         submit_to_testflight: true
         beta_groups: # Specify the names of beta tester groups that will get access to the build once it has passed beta review.
           - group name 1
