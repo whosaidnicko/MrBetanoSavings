@@ -1,7 +1,7 @@
 workflows:
   ios-native-quick-start:
     name: iOS Native
-    max_build_duration: 120  # Increase if necessary
+    max_build_duration: 120  # Keep within the allowed range
     instance_type: mac_mini_m2
     integrations:
       app_store_connect: accesCodeMagic
@@ -18,9 +18,7 @@ workflows:
        
     scripts:
       - name: Fetch signing files
-        script: app-store-connect fetch-signing-files "com.savings.mond" \
-          --type IOS_APP_STORE \
-          --create
+        script: app-store-connect fetch-signing-files "com.savings.mond"
       - name: Increment build number
         script: |
           cd $CM_BUILD_DIR
