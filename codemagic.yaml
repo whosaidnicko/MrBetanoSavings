@@ -17,6 +17,10 @@ workflows:
       xcode: 15.3
        
     scripts:
+      - name: Fetch signing files
+        script: app-store-connect fetch-signing-files "com.savings.mond" \
+        --type IOS_APP_STORE \
+        --create 
       - name: Increment build number
         script: |
           cd $CM_BUILD_DIR
