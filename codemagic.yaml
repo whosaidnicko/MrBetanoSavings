@@ -9,7 +9,6 @@ workflows:
       ios_signing:
         distribution_type: app_store
         bundle_identifier: com.savings.mond
-      
       vars:
         BUNDLE_ID: "com.savings.mond"
         XCODE_WORKSPACE: "MrBetanoSavings.xcodeproj"
@@ -18,21 +17,21 @@ workflows:
       xcode: 15.3
 
     scripts:
-      # Use provisioning profile in Codemagic’s Code Signing
       - name: Set up code signing settings on Xcode project
         script: xcode-project use-profiles
+
       - name: Increment build number
         script: |
           cd $CM_BUILD_DIR
           LATEST_BUILD_NUMBER=$(app-store-connect get-latest-app-store-build-number "$APP_STORE_APPLE_ID")
           agvtool new-version -all $(($LATEST_BUILD_NUMBER + 1))
+
       - name: Build ipa for distribution
         script: |
           xcode-project build-ipa \
-        --workspace "$CM_BUILD_DIR/ios/$XCODE_WORKSPACE" \
-        --scheme "$XCODE_SCHEME" \
-        --archive-flags="-destination 'generic/platform=iOS'"
-             
+            --workspace "$CM_BUILD_DIR/ios/$XCODE_WORKSPACE" \
+            --scheme "$XCODE_SCHEME" \
+            --archive-flags="-destination 'generic/platform=iOS'"
 
     artifacts:
       - build/ios/ipa/*.ipa
@@ -48,8 +47,9 @@ workflows:
         notify:
           success: true
           failure: true
+
       app_store_connect:
-        auth: integration  # Choose which integration to use for authentication
+        auth: integration
         submit_to_testflight: true
         beta_groups:
           - group name 1
