@@ -7,8 +7,10 @@ workflows:
       app_store_connect: accesCodeMagic
     environment:
       ios_signing:
-        distribution_type: app_store
-        bundle_identifier: com.savings.mond
+        provisioning_profiles:
+          - profile: bet
+        certificates:
+          - certificate: gast
       vars:
         BUNDLE_ID: "com.savings.mond"
         XCODE_WORKSPACE: "MrBetanoSavings.xworkspace"
@@ -29,9 +31,8 @@ workflows:
       - name: Build ipa for distribution
         script: |
           xcode-project build-ipa \
-            --workspace "$CM_BUILD_DIR/ios/$XCODE_PROJECT" \
-            --scheme "$XCODE_SCHEME" \
-            --archive-flags="-destination 'generic/platform=iOS'"
+            --workspace "$CM_BUILD_DIR/$XCODE_WORKSPACE" \
+            --scheme "$XCODE_SCHEME"
 
     artifacts:
       - build/ios/ipa/*.ipa
