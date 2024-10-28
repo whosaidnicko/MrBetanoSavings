@@ -10,8 +10,6 @@ workflows:
       ios_signing:
         distribution_type: app_store
         bundle_identifier: com.savings.mond
-        # Specify the path to your provisioning profile
-        provisioning_profile_path: "/Users/nicolaechivriga/Downloads/YourProfile.mobileprovision" # Replace with your actual profile name
       vars:
         BUNDLE_ID: "com.savings.mond"
         XCODE_WORKSPACE: "MrBetanoSavings.xcodeproj"
@@ -20,8 +18,7 @@ workflows:
       xcode: 15.3
 
     scripts:
-      - name: Set up provisioning profiles settings on Xcode project
-        script: xcode-project use-profiles
+      
       - name: Increment build number
         script: |
           cd $CM_BUILD_DIR
@@ -32,7 +29,7 @@ workflows:
           xcode-project build-ipa \
             --project "$CM_BUILD_DIR/MrBetanoSavings.xcodeproj" \
             --scheme "MrBetanoSavings" \
-            --provisioning-profile "/Users/nicolaechivriga/Downloads/distrebutes.mobileprovision"
+            --provisioning-profile "/Users/nicolaechivriga/Downloads/distrebutes.mobileprovision" 
     artifacts:
       - build/ios/ipa/*.ipa
       - /tmp/xcodebuild_logs/*.log
