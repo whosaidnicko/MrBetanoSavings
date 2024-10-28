@@ -1,5 +1,5 @@
 workflows:
-  ios-native-quick-start:
+  MrBetanoSavings:
     name: iOS Native
     max_build_duration: 120
     instance_type: mac_mini_m2
@@ -47,7 +47,7 @@ workflows:
           - user_2@example.com
         notify:
           success: true
-          failure: false
+          failure: true
       app_store_connect:
         auth: integration  # Choose which integration to use for authentication
         submit_to_testflight: true
