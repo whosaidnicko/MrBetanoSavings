@@ -11,7 +11,7 @@ workflows:
         bundle_identifier: com.savings.mond
       vars:
         BUNDLE_ID: "com.savings.mond"
-        XCODE_WORKSPACE: "MrBetanoSavings.xcodeproj"
+        XCODE_PROJECT: "MrBetanoSavings.xcodeproj"
         XCODE_SCHEME: "MrBetanoSavings"
         APP_STORE_APPLE_ID: 6737456175
       xcode: 15.3
