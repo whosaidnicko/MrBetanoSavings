@@ -11,7 +11,7 @@ workflows:
         bundle_identifier: com.savings.mond
       vars:
         BUNDLE_ID: "com.savings.mond"
-        XCODE_PROJECT: "MrBetanoSavings.xcodeproj"  # Changed from WORKSPACE to PROJECT
+        XCODE_PROJECT: "MrBetanoSavings.xcodeproj"
         XCODE_SCHEME: "MrBetanoSavings"
         APP_STORE_APPLE_ID: 6737456175
       xcode: 15.3
@@ -29,7 +29,7 @@ workflows:
             --scheme "MrBetanoSavings"
     
     artifacts:
-      - "$CM_BUILD_DIR/*.ipa"  # Specify the location of the built ipa file
+      - "$CM_BUILD_DIR/MrBetanoSavings.ipa"  # Path to the built .ipa file
     
     publishing:
       email:
@@ -47,5 +47,4 @@ workflows:
         beta_groups:
           - "Actual Beta Group Name 1"  # Replace with actual group names
           - "Actual Beta Group Name 2"
-
         submit_to_app_store: true
