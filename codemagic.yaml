@@ -1,5 +1,5 @@
 workflows:
-  MrBetanoSavings:
+  ios-native-quick-start:
     name: iOS Native
     max_build_duration: 120
     instance_type: mac_mini_m2
@@ -18,8 +18,10 @@ workflows:
       xcode: 15.3
 
     scripts:
+      -script: keychain initialize
+      -script: keychain add-certificates
       - name: Set up provisioning profile
-        script: |
+        script:
           # Use provisioning profile in Codemagic’s Code Signing
           xcode-project use-profiles
       - name: Increment build number
