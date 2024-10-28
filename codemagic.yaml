@@ -18,7 +18,9 @@ workflows:
       xcode: 15.3
 
     scripts:
+    - name: initialize kec
         script: keychain initialize
+    - name: somethign 
         script: keychain add-certificates
       - name: Set up provisioning profile
         script:
