@@ -1,9 +1,10 @@
 workflows:
   ios-native-quick-start:
     name: iOS Native
-    max_build_duration: 120  # Keep within the allowed range
+    max_build_duration: 120
     instance_type: mac_mini_m2
     integrations:
+      app_store_connect: klasimmer
       app_store_connect: accesCodeMagic
     environment:
       ios_signing:
@@ -11,12 +12,15 @@ workflows:
         bundle_identifier: com.savings.mond
       vars:
         BUNDLE_ID: "com.savings.mond"
-        XCODE_PROJECT: "MrBetanoSavings.xcodeproj"
+        XCODE_WORKSPACE: "MrBetanoSavings.xcodeproj"
         XCODE_SCHEME: "MrBetanoSavings"
         APP_STORE_APPLE_ID: 6737456175
       xcode: 15.3
-       
+
     scripts:
+
+      - name: Set up provisioning profiles settings on Xcode project
+        script: xcode-project use-profiles
       - name: Increment build number
         script: |
           cd $CM_BUILD_DIR
@@ -26,11 +30,12 @@ workflows:
         script: |
           xcode-project build-ipa \
             --project "$CM_BUILD_DIR/MrBetanoSavings.xcodeproj" \
-            --scheme "MrBetanoSavings" \
-            --export-options-plist "$CM_BUILD_DIR/export_options.plist"    
+            --scheme "MrBetanoSavings"
     artifacts:
-      - "$CM_BUILD_DIR/MrBetanoSavings.ipa"  # Path to the built .ipa file
-    
+      - build/ios/ipa/*.ipa
+      - /tmp/xcodebuild_logs/*.log
+      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
+      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
     publishing:
       email:
         recipients:
@@ -38,13 +43,17 @@ workflows:
           - user_2@example.com
         notify:
           success: true
-          failure: true  # Set to true if you want notifications for failures
+          failure: false
       app_store_connect:
-        api_key: $APP_STORE_CONNECT_PRIVATE_KEY
-        key_id: QN9Q977H42
-        issuer_id: 27172b6f-4ac4-4aa8-bdda-5bdfd61bef86
+        auth: integration
+
+        # Configuration related to TestFlight (optional)
+        # Note: This action is performed during post-processing.
         submit_to_testflight: true
-        beta_groups:
-          - "Actual Beta Group Name 1"  # Replace with actual group names
-          - "Actual Beta Group Name 2"
+        beta_groups: # Specify the names of beta tester groups that will get access to the build once it has passed beta review.
+          - group name 1
+          - group name 2
+
+        # Configuration related to App Store (optional)
+        # Note: This action is performed during post-processing.
         submit_to_app_store: true
