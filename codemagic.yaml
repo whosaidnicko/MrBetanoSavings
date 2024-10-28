@@ -28,10 +28,7 @@ workflows:
             --project "$CM_BUILD_DIR/MrBetanoSavings.xcodeproj" \
             --scheme "MrBetanoSavings"
     artifacts:
-      - build/ios/ipa/*.ipa
-      - /tmp/xcodebuild_logs/*.log
-      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
-      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
+     
     publishing:
       email:
         recipients:
