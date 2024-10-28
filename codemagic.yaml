@@ -32,7 +32,7 @@ workflows:
         script: |
           xcode-project build-ipa \
             --project "$CM_BUILD_DIR/MrBetanoSavings.xcodeproj" \
-            --scheme "$XCODE_SCHEME"
+            --scheme "MrBetanoSavings"
 
     artifacts:
       - build/ios/ipa/*.ipa
