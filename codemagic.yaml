@@ -32,7 +32,6 @@ workflows:
         script: |
           xcode-project build-ipa \
             --workspace "$CM_BUILD_DIR/$XCODE_WORKSPACE" \
-            -workspace /Users/builder/clone/MrBetanoSavings.codeproj -scheme
             --scheme "$XCODE_SCHEME"
 
     artifacts:
