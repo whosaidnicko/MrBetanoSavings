@@ -18,9 +18,9 @@ workflows:
       xcode: 15.3
 
     scripts:
-      - name: Set up provisioning profiles settings on Xcode project
+      - name: Set up provisioning profile
         script: |
-          # Ensure provisioning profile path is correctly set in Codemagic UI under Code Signing
+          # Use provisioning profile in Codemagic’s Code Signing
           xcode-project use-profiles
       - name: Increment build number
         script: |
