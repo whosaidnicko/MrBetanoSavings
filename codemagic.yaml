@@ -8,8 +8,11 @@ workflows:
       app_store_connect: accesCodeMagic
     environment:
       ios_signing:
-        distribution_type: app_store
-        bundle_identifier: com.savings.mond
+       provisioning_profiles:
+       - profile: disturb
+       certificates:
+       - certificate: distribute
+      
       vars:
         BUNDLE_ID: "com.savings.mond"
         XCODE_WORKSPACE: "MrBetanoSavings.xcodeproj"
@@ -18,12 +21,7 @@ workflows:
       xcode: 15.3
 
     scripts:
-    - name: initialize kec
-        script: keychain initialize
-    - name: somethign 
-        script: keychain add-certificates
-      - name: Set up provisioning profile
-        script:
+   
           # Use provisioning profile in Codemagic’s Code Signing
           xcode-project use-profiles
       - name: Increment build number
