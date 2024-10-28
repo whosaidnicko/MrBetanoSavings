@@ -10,7 +10,6 @@ workflows:
       ios_signing:
         distribution_type: app_store
         bundle_identifier: com.savings.mond
-        provisioning_profiles_path: "/Users/nicolaechivriga/Downloads/distrebutes.mobileprovision" # Set path for provisioning profiles
       vars:
         BUNDLE_ID: "com.savings.mond"
         XCODE_WORKSPACE: "MrBetanoSavings.xcodeproj"
@@ -21,8 +20,7 @@ workflows:
     scripts:
       - name: Set up provisioning profiles settings on Xcode project
         script: |
-          # Load the specified provisioning profile path
-          cp /Users/nicolaechivriga/Downloads/*.mobileprovision $HOME/Library/MobileDevice/Provisioning\ Profiles/
+          # Ensure provisioning profile path is correctly set in Codemagic UI under Code Signing
           xcode-project use-profiles
       - name: Increment build number
         script: |
