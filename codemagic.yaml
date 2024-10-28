@@ -18,8 +18,8 @@ workflows:
 
     scripts:
       - name: Set up code signing settings on Xcode project
-        script: xcode-project use-profiles
-        --project *.xcodeproj
+        script: |
+            xcode-project use-profiles --project *.xcodeproj
 
       - name: Increment build number
         script: |
