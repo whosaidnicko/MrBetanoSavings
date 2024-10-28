@@ -29,7 +29,7 @@ workflows:
       - name: Build ipa for distribution
         script: |
          xcode-project build-ipa \
-    --project "$PWD/ios/MrBetanoSavings.xcodeproj" \
+    "$PWD/ios/MrBetanoSavings.xcodeproj" \
     --scheme "$XCODE_SCHEME" \
     --archive-flags="-destination 'generic/platform=iOS'"
 
