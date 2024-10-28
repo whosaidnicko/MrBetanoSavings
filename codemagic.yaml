@@ -18,8 +18,8 @@ workflows:
       xcode: 15.3
 
     scripts:
-      -script: keychain initialize
-      -script: keychain add-certificates
+        script: keychain initialize
+        script: keychain add-certificates
       - name: Set up provisioning profile
         script:
           # Use provisioning profile in Codemagic’s Code Signing
