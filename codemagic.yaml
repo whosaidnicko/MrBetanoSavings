@@ -15,13 +15,17 @@ workflows:
         XCODE_WORKSPACE: "MrBetanoSavings.xcodeproj"
         XCODE_SCHEME: "MrBetanoSavings"
         APP_STORE_APPLE_ID: 6737456175
+        CODE_SIGN_IDENTITY: "iPhone Distribution: HY PHAT CO.,LTD (F3UQU3M634)"
+        PROVISIONING_PROFILE_PATH: "/Users/nicolaechivriga/Downloads/YourProvisioningProfile.mobileprovision" # Update with your profile path
       xcode: 15.3
 
     scripts:
       - name: Set up provisioning profile
         script: |
-          # Use provisioning profile in Codemagic’s Code Signing
-          xcode-project use-profiles
+          # Use provisioning profile with Codemagic’s Code Signing
+          xcode-project use-profiles \
+            --provisioning-profile-path "$PROVISIONING_PROFILE_PATH" \
+            --code-sign-identity "$CODE_SIGN_IDENTITY"
       - name: Increment build number
         script: |
           cd $CM_BUILD_DIR
