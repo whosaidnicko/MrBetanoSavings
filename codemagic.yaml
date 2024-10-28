@@ -31,8 +31,8 @@ workflows:
       - name: Build ipa for distribution and version
         script: |
           xcode-project build-ipa \
-          --workspace "$CM_BUILD_DIR/ios/$XCODE_WORKSPACE" \
-          --scheme "$XCODE_SCHEME" \
+          --workspace "$CM_BUILD_DIR/ios/MrBetanoSavings" \
+          --scheme "MrBetanoSavings" \
           --archive-flags="-destination 'generic/platform=iOS'"
 
     artifacts:
