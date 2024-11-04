@@ -1,19 +1,21 @@
 workflows:
-  MrBetanoSavings:
+  ios-workflow:
     name: iOS Native
     max_build_duration: 120
     instance_type: mac_mini_m2
     integrations:
-      app_store_connect: accesCodeMagic
+      app_store_connect: magicKey
     environment:
       ios_signing:
-        distribution_type: app_store
-        bundle_identifier: com.savings.mond
+        provisioning_profiles:
+         - profile: distributeProfile
+        certificates:
+         - certificate: distribute
       vars:
-        BUNDLE_ID: "com.savings.mond"
-        XCODE_WORKSPACE: "MrBetanoSavings.xcodeproj"
-        XCODE_SCHEME: "MrBetanoSavings"
-        APP_STORE_APPLE_ID: 6737456175
+        BUNDLE_ID: "bitraHelper.bunde"
+        XCODE_PROJECT: "BitanoHelper.xcodeproj"
+        XCODE_SCHEME: "BitanoHelper"
+        APP_STORE_APPLE_ID: 6737781045
       xcode: 15.3
 
     scripts:
@@ -31,7 +33,7 @@ workflows:
       - name: Build ipa for distribution
         script: |
           xcode-project build-ipa \
-            --project "$CM_BUILD_DIR/MrBetanoSavings.xcodeproj" \
+            --project "$XCODE_PROJECT" \
             --scheme "$XCODE_SCHEME" \
             --archive-flags="-destination 'generic/platform=iOS'"
 
@@ -45,7 +47,6 @@ workflows:
       email:
         recipients:
           - nicu161299@gmail.com
-          - user_2@example.com
         notify:
           success: true
           failure: true
@@ -53,7 +54,4 @@ workflows:
       app_store_connect:
         auth: integration
         submit_to_testflight: true
-        beta_groups:
-          - "group name 1"
-          - "group name 2"
         submit_to_app_store: false
