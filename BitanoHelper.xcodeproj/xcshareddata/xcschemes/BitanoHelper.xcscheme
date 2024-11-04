@@ -17,7 +17,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F41F5B4A2CCBB1C30076D66F"
                BuildableName = "BitanoHelper.app"
-               BlueprintName = "MrBetanoSavings"
+               BlueprintName = "BitanoHelper"
                ReferencedContainer = "container:BitanoHelper.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,7 +46,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F41F5B4A2CCBB1C30076D66F"
             BuildableName = "BitanoHelper.app"
-            BlueprintName = "MrBetanoSavings"
+            BlueprintName = "BitanoHelper"
             ReferencedContainer = "container:BitanoHelper.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -63,7 +63,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F41F5B4A2CCBB1C30076D66F"
             BuildableName = "BitanoHelper.app"
-            BlueprintName = "MrBetanoSavings"
+            BlueprintName = "BitanoHelper"
             ReferencedContainer = "container:BitanoHelper.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

@@ -183,9 +183,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F41F5B4A2CCBB1C30076D66F /* MrBetanoSavings */ = {
+		F41F5B4A2CCBB1C30076D66F /* BitanoHelper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F41F5B5A2CCBB1C50076D66F /* Build configuration list for PBXNativeTarget "MrBetanoSavings" */;
+			buildConfigurationList = F41F5B5A2CCBB1C50076D66F /* Build configuration list for PBXNativeTarget "BitanoHelper" */;
 			buildPhases = (
 				F41F5B472CCBB1C30076D66F /* Sources */,
 				F41F5B482CCBB1C30076D66F /* Frameworks */,
@@ -195,7 +195,7 @@
 			);
 			dependencies = (
 			);
-			name = MrBetanoSavings;
+			name = BitanoHelper;
 			productName = "Mr. Betano Win Using Savings";
 			productReference = F41F5B4B2CCBB1C30076D66F /* BitanoHelper.app */;
 			productType = "com.apple.product-type.application";
@@ -228,7 +228,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F41F5B4A2CCBB1C30076D66F /* MrBetanoSavings */,
+				F41F5B4A2CCBB1C30076D66F /* BitanoHelper */,
 			);
 		};
 /* End PBXProject section */
@@ -491,7 +491,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F41F5B5A2CCBB1C50076D66F /* Build configuration list for PBXNativeTarget "MrBetanoSavings" */ = {
+		F41F5B5A2CCBB1C50076D66F /* Build configuration list for PBXNativeTarget "BitanoHelper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F41F5B5B2CCBB1C50076D66F /* Debug */,
