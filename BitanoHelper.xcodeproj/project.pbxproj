@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F41F5B4F2CCBB1C30076D66F /* MrBetanoSavingsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41F5B4E2CCBB1C30076D66F /* MrBetanoSavingsApp.swift */; };
+		F41F5B4F2CCBB1C30076D66F /* BitanaHelperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41F5B4E2CCBB1C30076D66F /* BitanaHelperApp.swift */; };
 		F41F5B532CCBB1C50076D66F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F41F5B522CCBB1C50076D66F /* Assets.xcassets */; };
 		F41F5B572CCBB1C50076D66F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F41F5B562CCBB1C50076D66F /* Preview Assets.xcassets */; };
 		F41F5B5E2CCBB2590076D66F /* WaiterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41F5B5D2CCBB2590076D66F /* WaiterView.swift */; };
@@ -20,7 +20,6 @@
 		F41F5B6F2CCC1BF90076D66F /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41F5B6E2CCC1BF90076D66F /* WalletView.swift */; };
 		F41F5B722CCC1DFC0076D66F /* TextAnimatableValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41F5B712CCC1DFC0076D66F /* TextAnimatableValue.swift */; };
 		F41F5B742CCC1E420076D66F /* FinanceClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41F5B732CCC1E420076D66F /* FinanceClass.swift */; };
-		F41F5B782CCC20B10076D66F /* Inter_28pt-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F41F5B772CCC20B10076D66F /* Inter_28pt-Bold.ttf */; };
 		F41F5B7A2CCC28350076D66F /* Inter_28pt-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F41F5B792CCC28350076D66F /* Inter_28pt-Medium.ttf */; };
 		F41F5B7C2CCC3DBF0076D66F /* ChangeTargetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41F5B7B2CCC3DBF0076D66F /* ChangeTargetView.swift */; };
 		F41F5B7E2CCC40E40076D66F /* TextfieldBetn.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41F5B7D2CCC40E40076D66F /* TextfieldBetn.swift */; };
@@ -34,13 +33,14 @@
 		F41F5B8F2CCE94D30076D66F /* OperationsHistoryRectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41F5B8E2CCE94D30076D66F /* OperationsHistoryRectangleView.swift */; };
 		F41F5B922CCE9C9D0076D66F /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41F5B912CCE9C9D0076D66F /* HistoryView.swift */; };
 		F41F5B942CCEBE470076D66F /* AnalyticsRectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41F5B932CCEBE470076D66F /* AnalyticsRectangleView.swift */; };
+		F4713CB42CD9434B00C5BDC6 /* IstokWeb-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4713CB32CD9434B00C5BDC6 /* IstokWeb-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F41F5B4B2CCBB1C30076D66F /* MrBetanoSavings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MrBetanoSavings.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F41F5B4E2CCBB1C30076D66F /* MrBetanoSavingsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrBetanoSavingsApp.swift; sourceTree = "<group>"; };
+		F41F5B4B2CCBB1C30076D66F /* BitanoHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitanoHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F41F5B4E2CCBB1C30076D66F /* BitanaHelperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitanaHelperApp.swift; sourceTree = "<group>"; };
 		F41F5B522CCBB1C50076D66F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F41F5B542CCBB1C50076D66F /* MrBetanoSavings.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MrBetanoSavings.entitlements; sourceTree = "<group>"; };
+		F41F5B542CCBB1C50076D66F /* BitanoHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BitanoHelper.entitlements; sourceTree = "<group>"; };
 		F41F5B562CCBB1C50076D66F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F41F5B5D2CCBB2590076D66F /* WaiterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaiterView.swift; sourceTree = "<group>"; };
 		F41F5B5F2CCBB4340076D66F /* NavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
@@ -48,12 +48,11 @@
 		F41F5B642CCBB6F60076D66F /* CirclesLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclesLoadingView.swift; sourceTree = "<group>"; };
 		F41F5B672CCBB93E0076D66F /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		F41F5B692CCBBD820076D66F /* Inter_28pt-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter_28pt-SemiBold.ttf"; sourceTree = "<group>"; };
-		F41F5B6B2CCBBD8C0076D66F /* MrBetanoSavings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MrBetanoSavings.plist; sourceTree = SOURCE_ROOT; };
+		F41F5B6B2CCBBD8C0076D66F /* BitanoHelper.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = BitanoHelper.plist; sourceTree = SOURCE_ROOT; };
 		F41F5B6C2CCC08C00076D66F /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		F41F5B6E2CCC1BF90076D66F /* WalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletView.swift; sourceTree = "<group>"; };
 		F41F5B712CCC1DFC0076D66F /* TextAnimatableValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAnimatableValue.swift; sourceTree = "<group>"; };
 		F41F5B732CCC1E420076D66F /* FinanceClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceClass.swift; sourceTree = "<group>"; };
-		F41F5B772CCC20B10076D66F /* Inter_28pt-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter_28pt-Bold.ttf"; sourceTree = "<group>"; };
 		F41F5B792CCC28350076D66F /* Inter_28pt-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter_28pt-Medium.ttf"; sourceTree = "<group>"; };
 		F41F5B7B2CCC3DBF0076D66F /* ChangeTargetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeTargetView.swift; sourceTree = "<group>"; };
 		F41F5B7D2CCC40E40076D66F /* TextfieldBetn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldBetn.swift; sourceTree = "<group>"; };
@@ -67,6 +66,7 @@
 		F41F5B8E2CCE94D30076D66F /* OperationsHistoryRectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationsHistoryRectangleView.swift; sourceTree = "<group>"; };
 		F41F5B912CCE9C9D0076D66F /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		F41F5B932CCEBE470076D66F /* AnalyticsRectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsRectangleView.swift; sourceTree = "<group>"; };
+		F4713CB32CD9434B00C5BDC6 /* IstokWeb-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IstokWeb-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +83,7 @@
 		F41F5B422CCBB1C30076D66F = {
 			isa = PBXGroup;
 			children = (
-				F41F5B4D2CCBB1C30076D66F /* MrBetanoSavings */,
+				F41F5B4D2CCBB1C30076D66F /* BitanoHelper */,
 				F41F5B4C2CCBB1C30076D66F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,26 +91,26 @@
 		F41F5B4C2CCBB1C30076D66F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F41F5B4B2CCBB1C30076D66F /* MrBetanoSavings.app */,
+				F41F5B4B2CCBB1C30076D66F /* BitanoHelper.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F41F5B4D2CCBB1C30076D66F /* MrBetanoSavings */ = {
+		F41F5B4D2CCBB1C30076D66F /* BitanoHelper */ = {
 			isa = PBXGroup;
 			children = (
+				F4713CB32CD9434B00C5BDC6 /* IstokWeb-Bold.ttf */,
 				F41F5B902CCE9C900076D66F /* History */,
 				F41F5B852CCC5CC00076D66F /* Tips */,
 				F41F5B792CCC28350076D66F /* Inter_28pt-Medium.ttf */,
-				F41F5B772CCC20B10076D66F /* Inter_28pt-Bold.ttf */,
 				F41F5B702CCC1DDA0076D66F /* Wallet */,
-				F41F5B6B2CCBBD8C0076D66F /* MrBetanoSavings.plist */,
+				F41F5B6B2CCBBD8C0076D66F /* BitanoHelper.plist */,
 				F41F5B692CCBBD820076D66F /* Inter_28pt-SemiBold.ttf */,
 				F41F5B662CCBB9340076D66F /* Landing */,
 				F41F5B612CCBB4370076D66F /* Managers */,
-				F41F5B4E2CCBB1C30076D66F /* MrBetanoSavingsApp.swift */,
+				F41F5B4E2CCBB1C30076D66F /* BitanaHelperApp.swift */,
 				F41F5B522CCBB1C50076D66F /* Assets.xcassets */,
-				F41F5B542CCBB1C50076D66F /* MrBetanoSavings.entitlements */,
+				F41F5B542CCBB1C50076D66F /* BitanoHelper.entitlements */,
 				F41F5B552CCBB1C50076D66F /* Preview Content */,
 				F41F5B5D2CCBB2590076D66F /* WaiterView.swift */,
 				F41F5B642CCBB6F60076D66F /* CirclesLoadingView.swift */,
@@ -119,7 +119,7 @@
 				F41F5B7F2CCC45B00076D66F /* RedButtonView.swift */,
 				F41F5B832CCC4E3B0076D66F /* SettingsView.swift */,
 			);
-			path = MrBetanoSavings;
+			path = BitanoHelper;
 			sourceTree = "<group>";
 		};
 		F41F5B552CCBB1C50076D66F /* Preview Content */ = {
@@ -197,7 +197,7 @@
 			);
 			name = MrBetanoSavings;
 			productName = "Mr. Betano Win Using Savings";
-			productReference = F41F5B4B2CCBB1C30076D66F /* MrBetanoSavings.app */;
+			productReference = F41F5B4B2CCBB1C30076D66F /* BitanoHelper.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -215,7 +215,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F41F5B462CCBB1C30076D66F /* Build configuration list for PBXProject "MrBetanoSavings" */;
+			buildConfigurationList = F41F5B462CCBB1C30076D66F /* Build configuration list for PBXProject "BitanoHelper" */;
 			compatibilityVersion = "Xcode 15.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -238,7 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F41F5B782CCC20B10076D66F /* Inter_28pt-Bold.ttf in Resources */,
+				F4713CB42CD9434B00C5BDC6 /* IstokWeb-Bold.ttf in Resources */,
 				F41F5B7A2CCC28350076D66F /* Inter_28pt-Medium.ttf in Resources */,
 				F41F5B6A2CCBBD820076D66F /* Inter_28pt-SemiBold.ttf in Resources */,
 				F41F5B572CCBB1C50076D66F /* Preview Assets.xcassets in Resources */,
@@ -263,7 +263,7 @@
 				F41F5B922CCE9C9D0076D66F /* HistoryView.swift in Sources */,
 				F41F5B8D2CCD62800076D66F /* ChooseCategoryRectangle.swift in Sources */,
 				F41F5B872CCC5CCA0076D66F /* TipModel.swift in Sources */,
-				F41F5B4F2CCBB1C30076D66F /* MrBetanoSavingsApp.swift in Sources */,
+				F41F5B4F2CCBB1C30076D66F /* BitanaHelperApp.swift in Sources */,
 				F41F5B722CCC1DFC0076D66F /* TextAnimatableValue.swift in Sources */,
 				F41F5B602CCBB4340076D66F /* NavigationManager.swift in Sources */,
 				F41F5B892CCC6B940076D66F /* TipRectangleView.swift in Sources */,
@@ -400,16 +400,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = MrBetanoSavings/MrBetanoSavings.entitlements;
+				CODE_SIGN_ENTITLEMENTS = BitanoHelper/BitanoHelper.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MrBetanoSavings/Preview Content\"";
-				DEVELOPMENT_TEAM = V9JA59ZGNJ;
+				DEVELOPMENT_ASSET_PATHS = "\"BitanoHelper/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MrBetanoSavings.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = BitanaHelper;
+				INFOPLIST_FILE = BitanoHelper.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BitanoHelper;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -425,8 +425,8 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.bitanimr.savir;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = bitraHelper.bunde;
+				PRODUCT_NAME = BitanoHelper;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -442,16 +442,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = MrBetanoSavings/MrBetanoSavings.entitlements;
+				CODE_SIGN_ENTITLEMENTS = BitanoHelper/BitanoHelper.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MrBetanoSavings/Preview Content\"";
-				DEVELOPMENT_TEAM = V9JA59ZGNJ;
+				DEVELOPMENT_ASSET_PATHS = "\"BitanoHelper/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MrBetanoSavings.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = BitanaHelper;
+				INFOPLIST_FILE = BitanoHelper.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BitanoHelper;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -467,8 +467,8 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.bitanimr.savir;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = bitraHelper.bunde;
+				PRODUCT_NAME = BitanoHelper;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -482,7 +482,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F41F5B462CCBB1C30076D66F /* Build configuration list for PBXProject "MrBetanoSavings" */ = {
+		F41F5B462CCBB1C30076D66F /* Build configuration list for PBXProject "BitanoHelper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F41F5B582CCBB1C50076D66F /* Debug */,

@@ -1,8 +1,8 @@
 //
 //  TipsView.swift
-//  Mr. Betano Win Using Savings
+//  Bitana Helper
 //
-//  Created by Pek Dkop on 26/10/2024.
+//  Created by Pen Ke on 20/10/2024.
 //
 
 import Foundation

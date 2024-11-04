@@ -1,14 +1,14 @@
 //
-//  Mr__Betano_Win_Using_SavingsApp.swift
-//  Mr. Betano Win Using Savings
+//  BitanaHelperApp.swift
+//  Bitana Helper
 //
-//  Created by Pek Dkopa on 25/10/2024.
+//  Created by Pen Ke on 25/10/2024.
 //
 
 import SwiftUI
 
 @main
-struct BitanoHelper: App {
+struct BitanoHelperApp: App {
     @StateObject private var navigatonManager: NavigationManager = NavigationManager()
     @StateObject private var  financeClass: FinanceClass = FinanceClass()
     var body: some Scene {

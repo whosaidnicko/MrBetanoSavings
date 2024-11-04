@@ -1,8 +1,8 @@
 //
 //  LandingView.swift
-//  Mr. Betano Win Using Savings
+//  Bitana Helper
 //
-//  Created by Pek Dkop on 25/10/2024.
+//  Created by Pen Ke on 25/10/2024.
 //
 
 import Foundation
@@ -223,6 +223,6 @@ struct LandingView: View {
 
 extension Font {
     static var semiBold: String = "Inter28pt-SemiBold"
-    static var bold: String = "Inter28pt-Bold"
+    static var bold: String = "IstokWeb-Bold"
     static var medium: String = "Inter28pt-Medium.ttf"
 }

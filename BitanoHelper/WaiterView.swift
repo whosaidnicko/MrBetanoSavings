@@ -1,6 +1,6 @@
 //
 //  WaiterView.swift
-//  Mr. Betano Win Using Savings
+//  Bitana Helper
 //
 //  Created by Pek Dkop on 25/10/2024.
 //
